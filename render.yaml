@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: whiskers-relay
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: echo "sin dependencias"
+    startCommand: node server.js
+    healthCheckPath: /health
